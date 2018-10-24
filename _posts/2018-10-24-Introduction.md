@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Introduction"
+categories: [Non-technicl]
+tags: [misc]
 ---
 
 # Welcome to Linxz.co.uk
