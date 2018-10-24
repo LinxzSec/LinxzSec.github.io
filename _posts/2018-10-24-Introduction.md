@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Introduction"
 ---
 
-# Welcome
+# Welcome to Linxz.co.uk
 
 **Hello world**, this is my first Jekyll blog post.
 
