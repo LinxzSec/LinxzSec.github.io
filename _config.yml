@@ -1,4 +1,13 @@
 theme: jekyll-theme-hacker
+title: Linxz' Blog
+description: >- # this means to ignore newlines until "baseurl:"
+  Still trying to think of something witty, I will let you know once I get something...
+github: https://github.com/LinxzFade
+twitter: https://twitter.com/LinxzSec
 
 github:
   is_project_page: false
+
+
+
+
