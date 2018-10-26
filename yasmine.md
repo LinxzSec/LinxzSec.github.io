@@ -66,6 +66,6 @@ We continued talking about meeting and our future
 The day you became my girlfriend
 
 Yasmine, so much has happened between us in such a short peroid of time, I made this timeline to show you how much you mean to me and how much I love you.
-I hope that we share a future together so that this timeline can grow even more, I want a uture with you, I love you and I miss you.
+I hope that we share a future together so that this timeline can grow even more, I want a future with you, I love you and I miss you.
 I know this won't make you safe but I wanted you to see all the good memorable moments we've shared so far.
 
