@@ -17,7 +17,7 @@ The time I told you that I am still a virgin
 The time you told me you are always here for me
 
 ## 03/09/2018  
-The day you told me about when you nearly got raped
+The day you told me about what happened with that one boyfriend
 
 ## 10/09/2018 
 The time you were drunk and drunk dialed me but I missed it and the day you told me that you're free
