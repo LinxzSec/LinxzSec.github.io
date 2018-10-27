@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Linxz
+title: 
 description: index page
 
 ---
