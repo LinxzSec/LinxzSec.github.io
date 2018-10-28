@@ -31,7 +31,7 @@ As server maintenace your main role is to make sure that the server is running a
 
 ## Commands
 
-Our prefix for Gaius is `?` so all commands must begin with that else the bot will not interpret the text as a command.
+Our prefix for Gaius is `?` so all commands must begin with that else the bot will not interpret the text as a command. It's worth noting you can view all the commands in detail on the [Gaius Wiki](https://wiki.gaiusbot.me/)
 
 ## Moderation Commands
 
