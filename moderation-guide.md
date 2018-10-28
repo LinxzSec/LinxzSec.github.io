@@ -37,10 +37,10 @@ Our prefix for Gaius is `?` so all commands must begin with that else the bot wi
 
 Command | Response | Required Role | Parameters
 ------------ | ------------- | ------------- | -------------
-`purge` | Removes message from server | Support > |
-`warn` | Adds a warning to a user | Support > |
-`kick` | Removes user from server | Moderator > |
-`ban` | Removes user from server permanently | Moderator > |
+`purge` | Removes message from server | Support > | amount, mention, rolemention
+`warn` | Adds a warning to a user | Support > | userid/mention, reason
+`kick` | Removes user from server | Moderator > | userid/mention(s), reason
+`ban` | Removes user from server permanently | Moderator > | userid/mentions(s), reason
 
 ## Information Commands
 
