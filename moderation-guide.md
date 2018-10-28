@@ -31,6 +31,8 @@ As server maintenace your main role is to make sure that the server is running a
 
 ## Commands
 
+Our prefix for Gaius is `?` so all commands must begin with that else the bot will not interpret the text as a command.
+
 Command | Response | Required Role
 ------------ | ------------- | -------------
 `purge` | Removes message from server | Support >
