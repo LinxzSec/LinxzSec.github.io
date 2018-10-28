@@ -21,3 +21,13 @@ users in check in general. As a result support users have the ability to warn us
 
 As a moderator you're expected to be there for support users to escalate to, keep an eye on #roles so that users get the ranks they require, due to this you have the ability to assign roles, kick, ban, purge and warn users
 
+### Admin
+
+As an admin your main job is to be there as a point of escalation, whilst you do have all the same tasks as other staff your main role is to be able to provide support for other staff members when they are unsure of what to do. Admins also have the ability to edit permissions, if a scenario arised where permissions needed to be changed then an admin could do this.
+
+### Server Maintenance
+
+As server maintenace your main role is to make sure that the server is running as it should, staff are doing as they should and overall ownership and control of the ship (so to speak). Server maintenance are there to make sure the server runs smoothly at all times and that staff understand their role. Server maintenace are also there to provide upgrades and new features to make the Discord more enjoyable.
+
+
+
