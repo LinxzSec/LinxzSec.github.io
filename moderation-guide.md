@@ -33,10 +33,14 @@ As server maintenace your main role is to make sure that the server is running a
 
 Our prefix for Gaius is `?` so all commands must begin with that else the bot will not interpret the text as a command.
 
+## Moderation Commands
+
 Command | Response | Required Role
 ------------ | ------------- | -------------
 `purge` | Removes message from server | Support >
 `warn` | Adds a warning to a user | Support >
 `kick` | Removes user from server | Moderator >
 `ban` | Removes user from server permanently | Moderator >
+
+## Information Commands
 
