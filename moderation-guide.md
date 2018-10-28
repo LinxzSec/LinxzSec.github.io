@@ -35,12 +35,12 @@ Our prefix for Gaius is `?` so all commands must begin with that else the bot wi
 
 ## Moderation Commands
 
-Command | Response | Required Role
------------- | ------------- | -------------
-`purge` | Removes message from server | Support >
-`warn` | Adds a warning to a user | Support >
-`kick` | Removes user from server | Moderator >
-`ban` | Removes user from server permanently | Moderator >
+Command | Response | Required Role | Parameters
+------------ | ------------- | ------------- | -------------
+`purge` | Removes message from server | Support > |
+`warn` | Adds a warning to a user | Support > |
+`kick` | Removes user from server | Moderator > |
+`ban` | Removes user from server permanently | Moderator > |
 
 ## Information Commands
 
