@@ -29,5 +29,10 @@ As an admin your main job is to be there as a point of escalation, whilst you do
 
 As server maintenace your main role is to make sure that the server is running as it should, staff are doing as they should and overall ownership and control of the ship (so to speak). Server maintenance are there to make sure the server runs smoothly at all times and that staff understand their role. Server maintenace are also there to provide upgrades and new features to make the Discord more enjoyable.
 
+## Commands
 
+Command | Response | Required Role
+------------ | ------------- | -------------
+purge | Removes message from server | Support+
+kick | Removes user from server | Moderator+
 
