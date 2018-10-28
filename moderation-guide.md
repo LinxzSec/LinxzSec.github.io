@@ -33,6 +33,7 @@ As server maintenace your main role is to make sure that the server is running a
 
 Command | Response | Required Role
 ------------ | ------------- | -------------
-purge | Removes message from server | Support+
-kick | Removes user from server | Moderator+
+`purge` | Removes message from server | Support >
+`kick` | Removes user from server | Moderator >
+`ban` | Removes user from server permanently | Moderator >
 
