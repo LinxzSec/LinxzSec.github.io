@@ -1,6 +1,3 @@
-<!-- Display the countdown timer in an element -->
-  <p id="demo"></p>
-
   <script>
     // Set the date we're counting down to
     var countDownDate = new Date("Feb 14, 2019 08:00:00").getTime();
