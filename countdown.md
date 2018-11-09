@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: countdown
 title: 
-description: index page
+description: a special countdown for a special event
 
 ---
 
