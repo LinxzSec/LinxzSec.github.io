@@ -30,6 +30,8 @@ It's worth noting in the below examples I am using [Metasploitable 2](https://me
 
 #### Metasploit Exploitation
 
+Load Metasploit using `msfconsole` then run `use exploit/multi/samba/usermap_script` this will tell Metasploit to use that module, next you will need to set the `rhost` with the IP address of your target, you don't need to specify another payload for the bind shell as the Metasploit module will do this for you on your machines IP & port 4444. That's it! You now have a shell with whatever privliges the account Samba is running on has.
+
 
 ### Python Exploitation
 
