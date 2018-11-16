@@ -17,9 +17,13 @@ In general there isn't much to discuss regarding this bug, it's fairly simple - 
 
 ### Code Review
 
+Sadly I was unable to find the source code that was affected for this CVE thus I cannot do a review on it, I'm not sure if anyone has it but if you do I'd greatly appreciate it! You can contact me on Twitter which is linked at the bottom of the page.
 
 ### Exploit
 
+We can exploit this vulnerability using the [Metasploit module](https://www.exploit-db.com/exploits/16320/) however, this is another exploit that is easy to execute manually. 
+
+It's worth noting in the below examples I am using [Metasploitable 2](https://metasploit.help.rapid7.com/docs/metasploitable-2)
 
 #### Manual Exploitation
 
