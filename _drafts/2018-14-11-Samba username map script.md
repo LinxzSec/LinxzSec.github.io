@@ -32,3 +32,4 @@ However, after investigation from developers at Samba they found the bug to be m
 
 ### References
 
+[Samba Security CVE2007-2447](https://www.samba.org/samba/security/CVE-2007-2447.html)
