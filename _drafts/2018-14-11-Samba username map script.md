@@ -21,7 +21,7 @@ Sadly I was unable to find the source code that was affected for this CVE thus I
 
 ### Exploit
 
-We can exploit this vulnerability using the [Metasploit module](https://www.exploit-db.com/exploits/16320/) however, this is another exploit that is easy to execute manually. 
+We can exploit this vulnerability using the [Metasploit module](https://www.exploit-db.com/exploits/16320/) however, this is another exploit that is easy to execute manually. As per usual we will exploit the vulnerability with Metasploit, manually and write our own script for the exploit.
 
 It's worth noting in the below examples I am using [Metasploitable 2](https://metasploit.help.rapid7.com/docs/metasploitable-2)
 
