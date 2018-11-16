@@ -36,3 +36,5 @@ In general there isn't much to discuss regarding this bug, it's fairly simple - 
 [Samba Security CVE2007-2447](https://www.samba.org/samba/security/CVE-2007-2447.html)
 
 [Rapid 7 Metasploit Module](https://www.rapid7.com/db/modules/exploit/multi/samba/usermap_script)
+
+[CVE Details 2007-2447](https://www.cvedetails.com/cve/cve-2007-2447)
