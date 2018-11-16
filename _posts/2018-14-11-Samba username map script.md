@@ -4,6 +4,7 @@ title:  "Samba CVE2007-2447"
 categories: [Technical]
 tags: [command execution, exploit, python]
 draft: true
+published: true
 ---
 
 ### Introduction
