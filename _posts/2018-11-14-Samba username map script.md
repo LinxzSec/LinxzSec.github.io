@@ -14,7 +14,7 @@ However, after investigation from developers at Samba they found the bug to be m
 
 ### So, how does it work?
 
-In general there isn't much to discuss regarding this bug, it's fairly simple - by sending [shell metacharacters](http://faculty.salina.k-state.edu/tim/unix_sg/shell/metachar.html) as the username we trigger the bug and thus allowing us to send aribitary commands to the device. As we mentioned earlier, no authenication is required to exploit this due to the fact that the option is used to map usernames prior to authentication and thus we can exploit this whilst being unauthenticated.
+In general there isn't much to discuss regarding this bug, it's fairly simple - by sending [shell metacharacters](http://faculty.salina.k-state.edu/tim/unix_sg/shell/metachar.html) into the username we trigger the bug which in turn allows us to send  aribitary commands to the device through the username field when attempting an SMB connection. As we mentioned earlier, no authenication is required to exploit this due to the fact that the option is used to map usernames prior to authentication and thus we can exploit this whilst being unauthenticated.
 
 ### Code Review
 
