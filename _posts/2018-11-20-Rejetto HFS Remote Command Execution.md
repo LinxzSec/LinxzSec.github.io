@@ -27,6 +27,8 @@ As you can see, the vulnerable code is incredibly small, the only issue is that 
 
 ### Exploit
 
+Like in previous posts we're going to exploit this manually and with the [Metasploit Module](https://www.exploit-db.com/exploits/34926/) we will also provide a self-written/modified Python script for use.
+
 #### Manual Exploitation
 
 #### Metasploit Exploitation
