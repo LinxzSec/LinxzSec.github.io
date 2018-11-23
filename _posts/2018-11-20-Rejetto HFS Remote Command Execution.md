@@ -18,7 +18,7 @@ If we send a nullbyte as a paramter when performing a search on the affected dev
 
 ### Code Review
 
-```
+```Pascal
 function findMacroMarker(s:string; ofs:integer=1):integer;
 begin result:=reMatch(s, '\{[.:]|[.:]\}|\|', 'm!', ofs) end;
 ```
@@ -33,10 +33,9 @@ As you can see, the vulnerable code is incredibly small, the only issue is that 
 
 ### Python Exploitation
 
-
 ### References
 
-[SecLists Bug Tracker](https://seclists.org/bugtraq/2014/Sep/85) 
+[SecLists Bug Tracker](https://seclists.org/bugtraq/2014/Sep/85)
 
 [HFS Scripting](http://www.rejetto.com/wiki/index.php/HFS:_scripting_commands)
 
