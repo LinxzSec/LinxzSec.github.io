@@ -18,12 +18,61 @@ If we send a nullbyte as a paramter when performing a search on the affected dev
 
 ### Code Review
 
+There's not a massivee amount of code for us to review here however, because HFS is an open-source program we can look at both the affected & fixed code, which is nice! So, let's first look at the vulnerable function within `parserLib.pas`.
+
 ```Pascal
 function findMacroMarker(s:string; ofs:integer=1):integer;
 begin result:=reMatch(s, '\{[.:]|[.:]\}|\|', 'm!', ofs) end;
 ```
 
-As you can see, the vulnerable code is incredibly small, the only issue is that it does not correctly handle the nullbyte we send and thus that gives us the ability to script over HFS with no limitations.
+As you can see, the vulnerable code is incredibly small, the only issue is that it does not correctly handle the nullbyte we send and thus that gives us the ability to script over HFS with no limitations. If we look in the `scriptLib.pas` file we can see where this function is called.
+
+```Pascal
+function noMacrosAllowed(s:string):string;
+// prevent hack attempts
+var
+  i: integer;
+begin
+i:=1;
+  repeat
+  i:=findMacroMarker(s, i);
+  if i = 0 then break;
+  replace(s, '&#'+intToStr(charToUnicode(s[i]))+';', i,i);
+  until false;
+result:=s;
+end; // noMacrosAllowed
+```
+
+As you can see, the function in which this function is called is actually meant to stop people passing macros into a URL. However, there is no handling for a null byte which as we mentioned, that's where the problem lies. In order to fix this issue a function called `enforceNUL(s)` was added.
+
+```Pascal
+function noMacrosAllowed(s:string):string;
+// prevent hack attempts
+var
+  i: integer;
+begin
+i:=1;
+enforceNUL(s);
+  repeat
+  i:=findMacroMarker(s, i);
+  if i = 0 then break;
+  replace(s, '&#'+intToStr(charToUnicode(s[i]))+';', i,i);
+  until false;
+result:=s;
+end; // noMacrosAllowed
+```
+
+As you can see, before it executes `findMacroMarker` it will first run this `enforceNUL` function, let's take a look at what this function does, which is defined in `utillib.pas`.
+
+```Pascal
+procedure enforceNUL(var s:string);
+begin
+if s>'' then
+  setLength(s, strLen(@s[1]))
+end; // enforceNUL
+```
+
+Now, my Pascal knowledge isn't the best however as far as I can tell this function basically removes the first character so that you cannot inject a `%00` into the URL, I could be wrong so if anyone knows some Pascal and would like to help me understand this better please feel free to contact me on Twitter @LinxzSec or @Linxz on Discord, thanks!
 
 ### Exploit
 
