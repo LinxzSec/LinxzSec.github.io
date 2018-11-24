@@ -72,7 +72,7 @@ if s>'' then
 end; // enforceNUL
 ```
 
-Now, my Pascal knowledge isn't the best however as far as I can tell this function basically removes the first character so that you cannot inject a `%00` into the URL, I could be wrong so if anyone knows some Pascal and would like to help me understand this better please feel free to contact me on Twitter @LinxzSec or @Linxz on Discord, thanks!
+Now, my Pascal knowledge isn't the best however as far as I can tell this function basically removes the first character so that you cannot inject a `%00` into the URL, I could be wrong so if anyone knows some Pascal and would like to help me understand this better please feel free to contact me on Twitter @LinxzSec or @Linxz on Discord, thanks! You can obtain all of the source code for HFS from Source Forge.
 
 ### Exploit
 
