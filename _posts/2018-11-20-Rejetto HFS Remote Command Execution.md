@@ -89,3 +89,9 @@ Now, my Pascal knowledge isn't the best however as far as I can tell this functi
 [HFS Scripting](http://www.rejetto.com/wiki/index.php/HFS:_scripting_commands)
 
 [NullByte Injection](http://projects.webappsec.org/w/page/13246949/Null%20Byte%20Injection)
+
+[HFS Patchnotes](http://www.rejetto.com/hfs/?f=wn)
+
+[HFS 2.3C](https://sourceforge.net/projects/hfs/files/HFS/2.3c/)
+
+[Exploit DB](https://www.exploit-db.com/exploits/34668/)
