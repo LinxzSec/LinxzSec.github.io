@@ -95,3 +95,7 @@ Now, my Pascal knowledge isn't the best however as far as I can tell this functi
 [HFS 2.3C](https://sourceforge.net/projects/hfs/files/HFS/2.3c/)
 
 [Exploit DB](https://www.exploit-db.com/exploits/34668/)
+
+[Rapid7 Module](https://www.rapid7.com/db/modules/exploit/windows/http/rejetto_hfs_exec)
+
+[Metasploit Module](https://www.exploit-db.com/exploits/34926/)
