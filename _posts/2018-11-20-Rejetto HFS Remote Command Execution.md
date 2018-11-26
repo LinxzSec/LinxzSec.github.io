@@ -86,6 +86,12 @@ Now that we can see our device as being up we can move into the actual exploitat
 
 #### Manual Exploitation
 
+Before we begin to exploit this we're going to make sure that our device is running the vulnerable version, even though we know it is and we can confirm with `nmap ip -sV` we're just going to do a quick test, we will first try to get the device to execute a ping back to our attacking machine.
+
+First, setup a tcpdump using `tcpdump -i eth0 ICMP` leave that running and capturing packets in a terminal, then browse to your webserver with the following URL `http://192.168.139.1/?search=%00{.exec|C:\Windows\System32\ping.exe+192.168.139.138.}` obviously you will need to replace the IP addresses else this won't work, when you run this what you should see is your tcpdump picking up packets, you will also see a terminal open on the Windows device if you're using it (for example in my case I have three screens and I can see the terminal open when I press enter in my Kali VM). Now, what we did here was verify that the version is affected by sending a payload to the device, in this case we just told it to execute ping.exe and then ping the ip address `192.168.139.138` which is the address of my Kali VM. It's worth noting that it seems you *must* use a full stop at the end of your command else the server will not execute it, at least that's in my experience.
+
+Next we need to exploit this vulnerability in order to get a reverse shell, we know the RCE is there so let's figure out how we can leverage that to get full access to the account that's running the service.
+
 #### Metasploit Exploitation
 
 ### Python Exploitation
