@@ -76,12 +76,13 @@ Now, my Pascal knowledge isn't the best however as far as I can tell this functi
 
 ### Exploit
 
-Usually I test things against Metasploitable 2 however this vulnerability is not present in MS2 and thus in the below examples I am testing it against my own machine. I'm running HFS 2.3b on my Windows box whilst exploiting it using my Kali VM. I will show you how to execute this exploit both manaully and with Metasploit. 
+Usually I test things against Metasploitable 2 however this vulnerability is not present in MS2 and thus in the below examples I am testing it against my own machine. I'm running HFS 2.3b on my Windows box whilst exploiting it using my Kali VM. I will show you how to execute this exploit both manaully and with Metasploit.
 
-Firstly, let's test that we're running an affected version (although in this case we know we are) we will start out with sending a simple ping in a command back to our device whilst simultaneously running TCPDump on our attacking machine. Start by running HFS on your machine, make sure you can connect to it via the browser. 
+Firstly, let's test that we're running an affected version (although in this case we know we are) we will start out with sending a simple ping in a command back to our device whilst simultaneously running TCPDump on our attacking machine. Start by running HFS on your machine, make sure you can connect to it via the browser.
 
 ![Connection](LinxzFade.github.io/assets/images/2018-11-20/2018-11-20.PNG)
 
+Now that we can see our device as being up we can move into the actual exploitation of the device, we will first look at exploiting this manually.
 
 #### Manual Exploitation
 
