@@ -80,7 +80,7 @@ Usually I test things against Metasploitable 2 however this vulnerability is not
 
 Firstly, let's test that we're running an affected version (although in this case we know we are) we will start out with sending a simple ping in a command back to our device whilst simultaneously running TCPDump on our attacking machine. Start by running HFS on your machine, make sure you can connect to it via the browser. 
 
-![Connection](https://github.com/LinxzFade/LinxzFade.github.io/assets/images/2018-11-20/2018-11-20.png)
+![Connection](LinxzFade.github.io/assets/images/2018-11-20/2018-11-20.PNG)
 
 
 #### Manual Exploitation
