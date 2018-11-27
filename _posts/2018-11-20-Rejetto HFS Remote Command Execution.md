@@ -102,7 +102,9 @@ listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
 12:11:59.731918 IP LinxzSecKali > 192.168.139.1: ICMP echo reply, id 1, seq 35, length 40
 ```
 
-Next we need to exploit this vulnerability in order to get a reverse shell, we know the RCE is there so let's figure out how we can leverage that to get full access to the account that's running the service.
+Next we need to exploit this vulnerability in order to get a reverse shell, we know the RCE is there so let's figure out how we can leverage that to get full access to the account that's running the service. So, as we've entioned the next step was to get a reverse shell! I came across the [following repo](https://github.com/samratashok/nishang) made by Samratashok which contains a lot of different PowerShell tools for offensive pen-testing. We're going to use some of these tools as there is one in here that will allow us to create a reverse shell on the target device, this is helpful because it means we don't have to build a script ourselves. (Yes I realise this section is "manual exploitation" however I think using a script here is much more efficient.)
+
+So, we have the script, now we need to figure out how we can serve it to the target device so that we can send a payload to execute it. Well, we can use a variety of methods, in this case I'm going to use [SimpleHTTPServer.py](https://github.com/LinxzFade/Python-Hacking-Tools/blob/master/SimpleHTTPServer/SimpleHTTPServer.py) to achieve this. Basically, the script above is going to setup a HTTP Server on the specified port, and give any machine access to the directory that it's running in on that port, see where I'm going with this?
 
 #### Metasploit Exploitation
 
