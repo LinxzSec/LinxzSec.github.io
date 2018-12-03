@@ -12,13 +12,13 @@ On September 12th 2014, a vulnerability found within HttpFileServer was reported
 
 ### So, How does it work?
 
-By performing whats known as [NullByte Injection](http://projects.webappsec.org/w/page/13246949/Null%20Byte%20Injection) we can bypass the sanity checking written in that function thus allowing us to script over HFS without any restrictions in place. This is because the RegEx does not correclty handle the nullbyte characters which is what allows us to escape the filter. If you want to know more about Null Byte Injection you can also read my [blog post](https://linxz.co.uk/attacks/2018/11/20/NullByte-Injection.html) on it.
+By performing whats known as [NullByte Injection](http://projects.webappsec.org/w/page/13246949/Null%20Byte%20Injection) we can bypass the sanity checking written in that function thus allowing us to script over HFS without any restrictions in place. This is because the RegEx does not correctly handle the nullbyte characters which is what allows us to escape the filter. If you want to know more about Null Byte Injection you can also read my [blog post](https://linxz.co.uk/attacks/2018/11/20/NullByte-Injection.html) on it.
 
 If we send a nullbyte as a paramter when performing a search on the affected device then we can escape the filter of forbidden characters thus allowing us to execute arbitary commands on the device. As an example, take this request here `http://localhost:80/search=%00{.exec|+C:\Windows\system32\ping.exe+10.10.14.11}` as you can see we've got our nullbyte which allows us to bypass the sanity checking, then we're sending a command to tell the machine to run `ping.exe` and ping that IP address. You can learn more about [HFS Scripting Here.](http://www.rejetto.com/wiki/index.php/HFS:_scripting_commands). Now that we know we can execute commands remotely, we can now leverage this in order to setup a reverse shell to the affected device thus giving us access to it with the same privilege level as the account the software is running on.
 
 ### Code Review
 
-There's not a massivee amount of code for us to review here however, because HFS is an open-source program we can look at both the affected & fixed code, which is nice! So, let's first look at the vulnerable function within `parserLib.pas`.
+There's not a massive amount of code for us to review here however, because HFS is an open-source program we can look at both the affected & fixed code, which is nice! So, let's first look at the vulnerable function within `parserLib.pas`.
 
 ```Pascal
 function findMacroMarker(s:string; ofs:integer=1):integer;
