@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Samba CVE2007-2447"
-categories: [Technical]
+categories: [Vulnerabilities]
 tags: [command execution, exploit, python]
 draft: false
 ---
