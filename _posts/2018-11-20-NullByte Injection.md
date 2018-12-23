@@ -83,8 +83,3 @@ All this will do is simply strip any null bytes out of the user input, it's pret
 [NullByte-WonderHowTo](https://null-byte.wonderhowto.com/how-to/null-byte-injections-work-history-our-namesake-0130141/)
 
 [Vulnerable Functions](http://www.madirish.net/401)
-
-
-
-
-
