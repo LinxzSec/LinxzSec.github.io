@@ -70,7 +70,7 @@ class TextScramble {
     'and walking the path'
   ]
   
-  const el = document.querySelector('.h2')
+  const el = document.querySelector('.text')
   const fx = new TextScramble(el)
   
   let counter = 0
