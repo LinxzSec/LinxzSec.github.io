@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introduction to Cryptography"
+title:  "Introduction to CGU Series"
 categories: [Cryptography]
 tags: []
 draft: false
