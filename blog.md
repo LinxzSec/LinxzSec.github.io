@@ -1,10 +1,12 @@
 ## Bloggin'
 
-{% unless page.content == '' %}
-  <p>{{ page.content }}</p>
-{% endunless %}
-
-{% for post in site.categories.[page.category] %}
-  <h2><a href=""></a></h2>
-  <p></p>
+{% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+      {% unless post.draft %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
 {% endfor %}
