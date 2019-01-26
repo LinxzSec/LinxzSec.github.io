@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HackTheBox - Mischief Writeup"
-categories: []
+categories: [HackTheBox]
 tags: []
 draft: true
 ---
