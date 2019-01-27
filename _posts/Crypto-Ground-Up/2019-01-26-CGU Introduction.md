@@ -2,7 +2,7 @@
 layout: post
 title:  "Introduction to CGU Series"
 categories: [Cryptography]
-tags: []
+tags: [crypto]
 draft: false
 ---
 
