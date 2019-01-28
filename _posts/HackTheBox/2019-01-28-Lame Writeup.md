@@ -26,8 +26,8 @@ Not shown: 996 filtered ports
 PORT    STATE SERVICE     VERSION
 21/tcp  open  ftp         vsftpd 2.3.4
 |_ftp-anon: Anonymous FTP login allowed (FTP code 230)
-| ftp-syst: 
-|   STAT: 
+| ftp-syst:
+|   STAT:
 | FTP server status:
 |      Connected to 10.10.14.2
 |      Logged in as ftp
@@ -39,7 +39,7 @@ PORT    STATE SERVICE     VERSION
 |      vsFTPd 2.3.4 - secure, fast, stable
 |_End of status
 22/tcp  open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
-| ssh-hostkey: 
+| ssh-hostkey:
 |   1024 60:0f:cf:e1:c0:5f:6a:74:d6:90:24:fa:c4:d5:6c:cd (DSA)
 |_  2048 56:56:24:0f:21:1d:de:a7:2b:ae:61:b1:24:3d:e8:f3 (RSA)
 139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
@@ -47,9 +47,9 @@ PORT    STATE SERVICE     VERSION
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 Host script results:
-| smb-os-discovery: 
+| smb-os-discovery:
 |   OS: Unix (Samba 3.0.20-Debian)
-|   NetBIOS computer name: 
+|   NetBIOS computer name:
 |   Workgroup: WORKGROUP\x00
 |_  System time: 2019-01-24T19:05:12-05:00
 |_smb2-time: Protocol negotiation failed (SMB2)
@@ -74,7 +74,7 @@ Password:
 As you can see we can login just fine with this, now let's take a look around and try to find some files, etc. Firslty we'll do a pwd to see where we are on the file system and see if we have any files in our current directory.
 
 ```
-ftp> 
+ftp>
 ftp> pwd
 257 "/"
 ftp> ls -la
@@ -137,7 +137,7 @@ Anonymous login successful
 	---------       ----      -------
 	print$          Disk      Printer Drivers
 	tmp             Disk      oh noes!
-	opt             Disk      
+	opt             Disk
 	IPC$            IPC       IPC Service (lame server (Samba 3.0.20-Debian))
 	ADMIN$          IPC       IPC Service (lame server (Samba 3.0.20-Debian))
 Reconnecting with SMB1 for workgroup listing.
@@ -156,10 +156,10 @@ As you can see in the above, we have `opt` & `tmp` let's try and connect to `tmp
 ```
 linxz@linxzsec:~/Documents/Hacking/HTB/Boxes/Retired/Lame$ smbclient //10.10.10.3/tmp
 WARNING: The "syslog" option is deprecated
-Enter WORKGROUP\linxz's password: 
+Enter WORKGROUP\linxz's password:
 Anonymous login successful
 Try "help" to get a list of possible commands.
-smb: \> 
+smb: \>
 ```
 
 Now that we've logged into the share, we want to actually exploit this vulnerability, if you want to understand how it works you can go and read my post that I linked earlier as I'm not going to explain the exploit here.
