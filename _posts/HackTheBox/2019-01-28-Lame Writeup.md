@@ -2,7 +2,7 @@
 layout: post
 title:  "HackTheBox - Lame Writeup"
 categories: [HackTheBox]
-tags: []
+tags: [pentesting]
 draft: false
 ---
 

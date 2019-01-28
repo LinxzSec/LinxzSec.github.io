@@ -2,7 +2,7 @@
 layout: post
 title:  "HackTheBox - Legacy Writeup"
 categories: [HackTheBox]
-tags: []
+tags: [pentesting]
 draft: false
 ---
 
