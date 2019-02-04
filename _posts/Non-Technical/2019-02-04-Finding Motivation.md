@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Struggles - Finding Motivation"
-categories: [Non-Technical]
+categories: [Non-technical]
 tags: [rant]
 draft: false
 ---
