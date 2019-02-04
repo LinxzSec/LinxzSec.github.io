@@ -3,7 +3,7 @@ layout: post
 title:  "Struggles - Finding Motivation"
 categories: [Non-Technical]
 tags: [rant]
-draft: true
+draft: false
 ---
 
 # Introduction
