@@ -6,8 +6,6 @@ github: https://github.com/LinxzFade
 twitter: https://twitter.com/LinxzSec
 discord: https://discordapp.com/invite/QNwVXXJ
 
-comments: true
-
 plugins:
   - jekyll-feed
 
