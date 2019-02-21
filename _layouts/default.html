@@ -68,8 +68,8 @@
     </footer>
 
     <script>
-      var diagram = Diagram.parse("A->B: Message");
-      diagram.drawSVG("diagram", {theme: 'hand'});
+      var options = {theme: 'hand'};
+      $(".diagram").sequenceDiagram(options);
     </script>
     
   </body>
