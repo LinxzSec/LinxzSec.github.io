@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+background-image: url(/assets/images/background.png);
+
+footer {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-top: 1px dashed $conifer; //footer;
+  padding: 20px 0;
+}
+
+.btn-twitter .icon { background: url("../images/twitter.png") 0 0 no-repeat; }
+.btn-discord .icon { background: url("../images/discord.png") 0 0 no-repeat; }
