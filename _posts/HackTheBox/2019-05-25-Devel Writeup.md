@@ -41,7 +41,7 @@ As you can see we've got two ports FTP & HTTP, FTP stands out right away because
 
 ### FTP & HTTP
 
-Upon logging into the FTP server we can see the same files as per the NMAP scan, and by visiting the site on HTTP we can confirm that the web root is the same as the FTP root so we're going to try and upload an ASPX shell, luckily for us there is one built into Kali.
+Upon logging into the FTP server we can see the same files as per the NMAP scan, and by visiting the site on HTTP we can confirm that the web root is the same as the FTP root so we're going to try and upload an ASPX shell, luckily for us there is one built into Kali. Because it's running IIS 7.5 which is relatively new we made the assumption it'd be using ASPX rather than ASP. The difference being that ASP is VBScript based and ASPX is .NET based this is a neat little thing to remember when attacking IIS servers.
 
 ```
 ftp> put /usr/share/webshells/aspx/cmdasp.aspx cmd.aspx
