@@ -3,7 +3,7 @@ layout: post
 title:  "HackTheBox - Cronos Writeup"
 categories: [HackTheBox]
 tags: [pentesting]
-draft: true
+draft: false
 ---
 
 # Introduction
