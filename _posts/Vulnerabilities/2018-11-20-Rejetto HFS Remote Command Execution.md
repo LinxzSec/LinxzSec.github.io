@@ -122,7 +122,7 @@ root@LinxzSecKali:~/Documents/Scripts/Python# python3 SimpleHTTPServer.py 8000
 192.168.139.1 - - [27/Nov/2018 18:39:04] "GET /test HTTP/1.1" 404 -
 ```
 
-but, that doesn't matter! We expeceted that behavior and now we know that our python HTTP server is working, we can now use this to get the victim to download our PowerShell reverse shell script that we briefly mentioned earlier
+but, that doesn't matter! We expected that behaviour and now we know that our python HTTP server is working, we can now use this to get the victim to download our PowerShell reverse shell script that we briefly mentioned earlier
 
 #### Metasploit Exploitation
 
