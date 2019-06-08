@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "XXE Injection"
-categories: [Attacks]
+categories: [Web App]
 tags: []
 draft: true
 ---
@@ -86,4 +86,12 @@ bin:x:2:2:bin:/bin:/usr/sbin/nologin
 As you can see, we now have the contents of `/etc/passwd` that's good! This type of attack can be quite powerful and is fairly simple to execute! It is worth noting that in the real world an XML application will have **a lot** of data. In order to test for XXE in these cases we must test each data node in the XML individually by making use of our defined external entity.
 
 ### Exploiting XXE to perform SSRF Attacks
+
+We've never talked about Server-Side Request Forgery attacks before but simply put an SSRF allows us to induce a server-side application to make HTTP requests to any URL that the server can access, this can be very dangerous and so XXEs that allow us to perform SSRFs can in turn be very dangerous. In order to carry out an XXE to perform an SSRF we use an external entity that defines the URL that we want to target and then use that defined entry in a data value. If we can do this within a data value that is returned in the applications response then we will be able to view the response from the URL and thus gain a two-way interaction with the backend system. If not, we may only be able to perform blind SSRF attacks, which are still critical however they are a bit more difficult for an attacker as he does not get to see the response.
+
+```xml
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.linxz.com/"> ]> 
+```
+
+In the above example you can see we are defining an external entity which will cause the server to make a HTTP request to an internal system, in this case "internal.linxz.com" within our infrastructure. You can probably now see/understand why a non-blind version of this can be absolutely devestating!
 
