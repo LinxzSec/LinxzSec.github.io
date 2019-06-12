@@ -34,7 +34,7 @@ So now that we know what the DTD is, let's talk about custom XML entities. Let's
 
 We can now call this custom entity with `&linxz;` within the XML document and it will be replaced with the value of `linxz is a memer` pretty cool!
 
-## What are XML External Entities?
+### What are XML External Entities?
 
 An external entity is like a custom entity however it is defined outside of the DTD unlike a custom entity which we define in the DTD. This allows us to define the entity somewhere else and use a URL to access it - pretty cool! However, external entities are the reason we have XXE based attacks which is not so cool!
 
