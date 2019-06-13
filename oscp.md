@@ -5,4 +5,5 @@
     {% unless post.draft %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endunless %}
+  {% endif %}
 {% endfor %}
