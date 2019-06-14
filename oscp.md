@@ -1,5 +1,6 @@
 ## OSCP
 
+<ul>
 {% for post in site.posts %}
   {% if post.categories contains 'OSCP Journey' %}
     {% unless post.draft %}
@@ -9,3 +10,4 @@
     {% endunless %}
   {% endif %}
 {% endfor %}
+</ul>
