@@ -2,10 +2,10 @@
 
 {% for post in site.posts %}
   {% if post.categories contains 'OSCP Journey' %}
-    <ul>
     {% unless post.draft %}
+    <ul>
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endunless %}
     </ul>
+    {% endunless %}
   {% endif %}
 {% endfor %}
