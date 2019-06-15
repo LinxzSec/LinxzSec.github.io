@@ -52,7 +52,6 @@ sammy@10.10.10.76: sammy                 pts/2        <Apr 24, 2018> 10.10.14.4 
 sunny@10.10.10.76: sunny                 pts/3        <Apr 24, 2018> 10.10.14.4          ..
 sys@10.10.10.76: sys             ???                         < .  .  .  . >..
 zsa zsa@10.10.10.76: Login       Name               TTY         Idle    When    Where..zsa                   ???..zsa                   ???..
-
 ```
 
 As you can see there are two very interesting users in the list above `sammy` and `sunny` these are more interesting than the rest because they are the only two that actually have logins, the rest do not. Interestingly, we don't see a root user though, this is odd. Because I couldn't see one in the list I ran another scan just for the username `root` to see what I could see.
@@ -60,7 +59,6 @@ As you can see there are two very interesting users in the list above `sammy` an
 ``` 
 finger -u "root" -t 10.10.10.76
 root@10.10.10.76: root     Super-User            pts/3        <Apr 24, 2018> sunday              ..
-
 ```
 
 So we do have a root user, interestingly we see the hostname "sunday" from this we can infer the admin potentially logged in with this locally and the hostname of the device is "sunday". Given that HTB is a bit CTF like, I tried a few username/password combinations for SSH, to my surprise I got in!
