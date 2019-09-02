@@ -72,6 +72,6 @@ If we can see the values $ C_1 \; \text{and} \; C_2 $ then we can compute the fo
 
 Now that we have Xored the two files together we have to do one more thing, apply the same logic from the ECB Penguin problem, we do this by using `cat discard.txt result.bin > flag.ppm` and from here we get the flag :D
 
-![Flag](../../assets/images/NetSecFocus-CTF/flag.PNG)
+![Flag](/assets/images/NetSecFocus-CTF/flag.png)
 
 Was a super fun & kinda' infuriating challenge - thanks to @Tunny for creating this and thanks for the ticket sir! Its most kind of you. Also thanks to @Trev for pointing out what I missed >.<
