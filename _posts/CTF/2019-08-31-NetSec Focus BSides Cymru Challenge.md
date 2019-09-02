@@ -68,7 +68,7 @@ CTR mode is computed as $ C = P \oplus F(Key,IV) $ the main problem is that if y
 $ C_1 = P_1 \oplus F(Key, IV) $
 $ C_2 = P_2 \oplus F(Key, IV) $
 
-If we can see the values $ C_1 \; \text{and} \; C_2 $ then we can compute the following $ C_1 \oplus C_2 = P_1 \oplus P_2 $ and thus returning the value of the two plaintexts xored together. If we apply this logic here then we will be 50% of the way to decrypting the files. We can Xor the two files together by using a [simple Python script](https://www.megabeets.net/xor-files-python/)with `python xor.py 1.bin.enc 2.bin.enc result.bin` from there we then had a file `result.bin` which we will use in the next step.
+If we can see the values $ C_1 \; \text{and} \; C_2 $ then we can compute the following $ C_1 \oplus C_2 = P_1 \oplus P_2 $ and thus returning the value of the two plaintexts xored together. If we apply this logic here then we will be 50% of the way to decrypting the files. We can Xor the two files together by using a [simple Python script](https://www.megabeets.net/xor-files-python/) with `python xor.py 1.bin.enc 2.bin.enc result.bin` from there we then had a file `result.bin` which we will use in the next step.
 
 Now that we have Xored the two files together we have to do one more thing, apply the same logic from the ECB Penguin problem, we do this by using `cat discard.txt result.bin > flag.ppm` and from here we get the flag :D
 
