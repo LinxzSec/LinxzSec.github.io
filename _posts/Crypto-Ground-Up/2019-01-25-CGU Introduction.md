@@ -12,8 +12,8 @@ I am **not** a Cryptographer, I am **not** a Cryptography student, Cryptology is
 
 ## Introduction
 
-Over the next few months I'm going to attempt to teach a very basic cryptography course in a series of blog posts, from the ground up. For those that don't know me, I'm a massive crypto nerd, something about it is so fascinating and I 'd love to share that passion I have with everyone else and maybe at the same time learning some things I did not know already or teach some people things they did not know! Well, that is the goal of this blog anyway, I guess. 
+Over the next few months I'm going to attempt to teach a very basic cryptography course in a series of blog posts, from the ground up. For those that don't know me, I'm a massive crypto nerd, something about it is so fascinating and I 'd love to share that passion I have with everyone else and maybe at the same time learning some things I did not know already or teach some people things they did not know! Well, that is the goal of this blog anyway, I guess.
 
-I really don't know how I'm actually going to teach this yet, I'm just going to wing it and do my best to get everything correct, I guess we might start off with some basic mathematical formulas, etc but we'll see! It might take a while to get the first post out following this post simply because I want to be weeks ahead so I can get things right and give myself time to double & triple check my work! 
+I really don't know how I'm actually going to teach this yet, I'm just going to wing it and do my best to get everything correct, I guess we might start off with some basic mathematical formulas, etc but we'll see! It might take a while to get the first post out following this post simply because I want to be weeks ahead so I can get things right and give myself time to double & triple check my work!
 
 Thanks for reading, hopefully this should be a fun journey!
