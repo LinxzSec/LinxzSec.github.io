@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "OSCP Experience & Tips"
+title: "OSCP Experience & Tips"
 categories: [Non-technical]
-tags: [OSCP, Hacking, Courses, Certifications]
+tags: [hacking, courses, certifications]
 draft: false
 ---
 
