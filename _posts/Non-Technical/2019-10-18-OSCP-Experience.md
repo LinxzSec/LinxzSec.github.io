@@ -3,7 +3,7 @@ layout: post
 title: "OSCP Experience & Tips"
 categories: [Non-technical]
 tags: [courses]
-draft: false
+draft: true
 ---
 
 # OSCP Experience
@@ -50,4 +50,4 @@ When I woke back up from my 6 hour sleep, I had luckily nearly finished the repo
 
 ## Final Notes
 
-Overall, I don't have anything else to say, this was pretty much my entire experience of the entire process from start-finish (well, minus the all of the practice I did before doing the OSCP). I hope this is helpful for someone looking to do the OSCP. I appreciate that there are **a lot** of blog posts out there surrounding this exam & the process however, I guess I just wanted to give my take on things because I'm an opinionated twat :D Thanks for reading! 
+Overall, I don't have anything else to say, this was pretty much my entire experience of the entire process from start-finish (well, minus the all of the practice I did before doing the OSCP). I hope this is helpful for someone looking to do the OSCP. I appreciate that there are **a lot** of blog posts out there surrounding this exam & the process however, I guess I just wanted to give my take on things because I'm an opinionated twat :D Thanks for reading!
