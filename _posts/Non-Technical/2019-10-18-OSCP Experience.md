@@ -21,7 +21,7 @@ As I mentioned, the difference in difficulty between HTB and the PWK labs I was 
 ## PWK Tips
 
 1) Set a realistic time frame for yourself.
-   I did 30 days because I used 16 days of holiday I had accumulated at work, if you mix this in with all the weekends I was pretty much not at work for an entire month, I had effectively 18 hours a day (most days) to study for this, I knew I had time and that's why I went with 30 days, not to mention I was fairly confident in my ability deep down (even though my surface level imposter syndrome suggested otherwise). So, if you have any other commitments and cannot book such a sheer amount of time off work like I did; really think about how much effort you can put in because I won't say this course is effortless. Did I think it was easy? Yes, I did think it was easy; it was easy but it still takes **time** & **effort** so set a realistic goal for yourself.
+    I did 30 days because I used 16 days of holiday I had accumulated at work, if you mix this in with all the weekends I was pretty much not at work for an entire month, I had effectively 18 hours a day (most days) to study for this, I knew I had time and that's why I went with 30 days, not to mention I was fairly confident in my ability deep down (even though my surface level imposter syndrome suggested otherwise). So, if you have any other commitments and cannot book such a sheer amount of time off work like I did; really think about how much effort you can put in because I won't say this course is effortless. Did I think it was easy? Yes, I did think it was easy; it was easy but it still takes **time** & **effort** so set a realistic goal for yourself.
 
 2) Watch all of the videos & read the PDF.
     A lot of the problems you will face in the labs is shown in significant detail in the course material and you don't appreciate that until you come to a box and go "oh, that was in the guide almost perfectly" that is what the guide is there for! I will admit the videos & PDF are boring, yes its boring, I really dislike learning that way but it was worth it for whenever I got stuck.
@@ -30,7 +30,7 @@ As I mentioned, the difference in difficulty between HTB and the PWK labs I was 
     This lab box is given to you and you cannot use it in the lab report anyways (if you were planning on doing a lab report) so you may as well look at someone elses methodology, see how it compares to your own, etc, and get a feel for what the PWK boxes are like before you jump in.
 
 4) If you're only going for 30 days lab time - don't do the lab report.
-   Honestly, it's a waste of time when you only have 30 days. Wasting 4, 5, 6 days on the lab report for 5 points is just not worth it. I did not do a lab report and I relied soley on my skill alone to get the necessary points. If you feel that you really are weak and need a lab report to pass then I highly recommend going with 60 or 90 days instead of 30. I think if you're doing 30 days but relying on the lab report to scrape you by then you are out of your comfort zone and need to read tip numero uno of this post.
+    Honestly, it's a waste of time when you only have 30 days. Wasting 4, 5, 6 days on the lab report for 5 points is just not worth it. I did not do a lab report and I relied soley on my skill alone to get the necessary points. If you feel that you really are weak and need a lab report to pass then I highly recommend going with 60 or 90 days instead of 30. I think if you're doing 30 days but relying on the lab report to scrape you by then you are out of your comfort zone and need to read tip numero uno of this post.
 
 5) Don't read so many blog posts about peoples experience.
     I read A LOT of these in my run up to OSCP and I wish I hadn't because I psyched myself out and convinced myself this exam is harder than it actually is (I know this is subjective). If you feel you **must** read blog posts or **need** to read blog posts then take **ALL** of them with a pinch of salt (including this one).
@@ -48,13 +48,13 @@ When I woke back up from my 6 hour sleep, I had luckily nearly finished the repo
 ## OSCP Tips
 
 1) Document all the things!
-   I cannot even begin to explain how much this helped me for the exam. I had spent so much time perfecting my notes & their structure that when it came to the exam report (although tedious) it was a breeze to just copy everything into it - really, document everything and do it well. I used CherryTree as I mentioned and I took advantage of the template in [James Halls' wonderful blog post on the OSCP](https://411hall.github.io/OSCP-Preparation/)
+    I cannot even begin to explain how much this helped me for the exam. I had spent so much time perfecting my notes & their structure that when it came to the exam report (although tedious) it was a breeze to just copy everything into it - really, document everything and do it well. I used CherryTree as I mentioned and I took advantage of the template in [James Halls' wonderful blog post on the OSCP](https://411hall.github.io/OSCP-Preparation/)
 
 2) Record the exam!
-   This one sounds a bit excessive or "weird" perhaps, but actually - it was super useful. I don't like breaking my workflow when I'm hacking. Especially not for menaial tasks such as taking screenshots. So in order to ensure I didn't have to do that, I recorded both of my VM screens for the exam using OBS, this meant that when it came to documenting my exam I could simply take screenshots from the video I made!
+    This one sounds a bit excessive or "weird" perhaps, but actually - it was super useful. I don't like breaking my workflow when I'm hacking. Especially not for menaial tasks such as taking screenshots. So in order to ensure I didn't have to do that, I recorded both of my VM screens for the exam using OBS, this meant that when it came to documenting my exam I could simply take screenshots from the video I made!
 
 3) Don't panic!
-   I know this is a somewhat "obvious" tip but, don't panic especially about the time; you have **plenty** of time. Really, plenty. You do not need to be concious of the clock, 24 hours doesn't seem like a lot of time but if you can get the BoF down as fast as possible then you'll realise just quiet how much time you have.
+    I know this is a somewhat "obvious" tip but, don't panic especially about the time; you have **plenty** of time. Really, plenty. You do not need to be concious of the clock, 24 hours doesn't seem like a lot of time but if you can get the BoF down as fast as possible then you'll realise just quiet how much time you have.
 
 ## Final Notes
 
