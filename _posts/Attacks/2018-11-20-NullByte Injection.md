@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "NullByte Injection"
-categories: [Attacks]
+categories: Attacks
 tags: []
 draft: false
 ---

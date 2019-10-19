@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HackTheBox - Beep Writeup"
-categories: [HackTheBox]
+categories: HackTheBox
 tags: [pentesting]
 draft: false
 ---

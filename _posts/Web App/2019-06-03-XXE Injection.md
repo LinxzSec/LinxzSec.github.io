@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "XXE Injection"
-categories: [Web App]
+categories: Web App
 tags: []
 draft: true
 ---

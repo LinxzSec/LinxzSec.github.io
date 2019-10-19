@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction"
-categories: [Non-technical]
+categories: Non-technical
 tags: [misc]
 ---
 
