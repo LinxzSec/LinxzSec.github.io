@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "NetSec Focus BSides Cymru AES Challenge"
-categories: CTF
+categories: [CTF]
 tags: [crypto, cryptanalysis]
 draft: false
 ---

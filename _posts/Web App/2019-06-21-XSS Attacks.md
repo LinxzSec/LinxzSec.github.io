@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cross Site Scripting"
-categories: Web App
+categories: [Web App]
 tags: [vulnerabilities, webapp]
 draft: true
 ---

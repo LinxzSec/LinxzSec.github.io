@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HackTheBox - Nineveh Writeup"
-categories: HackTheBox
+categories: [HackTheBox]
 tags: [pentesting]
 draft: true
 ---

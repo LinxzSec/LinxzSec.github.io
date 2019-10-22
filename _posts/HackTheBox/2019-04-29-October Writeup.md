@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HackTheBox - October Writeup"
-categories: HackTheBox
+categories: [HackTheBox]
 tags: [pentesting]
 draft: true
 ---
