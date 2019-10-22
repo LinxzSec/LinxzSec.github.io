@@ -77,7 +77,7 @@ Here we have an XML file which is storing the stock level of an item in the XML,
 
 As you can see in the above XML, what we're doing is asking the XML (using an external entity) to give us `/etc/passwd/` back and we're calling the custom entity in the `<productID>` value. In this case our web app is going to return the the following data!
 
-```
+```bash
 Invalid product ID: root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
