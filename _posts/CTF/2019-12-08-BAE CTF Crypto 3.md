@@ -8,7 +8,7 @@ draft: false
 
 ## Introduction
 
-BAE hosted a CTF the day before BSides Cheltenham for the community and I played with our new team elRaptor (formerly DAE). There was a crypto challenge I saw a fair few people struggling with (I think it only got 3 solves in the end and I got the first solve) so I thought I'd write a blog post about how I did it. Also, shout out to the person that drew out ECB mode on paper, although it wasn't the right method that's some serious dedication, haha!
+BAE hosted a CTF the day before BSides Cheltenham for the community and I played with our new team, elRaptor (formerly DAE). There was a crypto challenge I saw a fair few people struggling with (I think it only got 3 solves in the end and I got the first solve) so I thought I'd write a blog post about how I did it. Also, shoutout to the person that drew out ECB mode on paper, although it wasn't the right method that's some serious dedication, haha!
 
 ## The Challenge
 
