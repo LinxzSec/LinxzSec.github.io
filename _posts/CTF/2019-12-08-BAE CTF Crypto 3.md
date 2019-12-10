@@ -3,7 +3,7 @@ layout: post
 title:  "BAE x BSides Cheltenham CTF"
 categories: [CTF]
 tags: [crypto, cryptanalysis]
-draft: true
+draft: false
 ---
 
 ## Introduction
@@ -12,7 +12,7 @@ BAE hosted a CTF the day before BSides Cheltenham for the community and I played
 
 ## The Challenge
 
-So, the challenge was some what reminisient of the ECB penguin problem in the sense that we had two picture files in .bmp format, one was unencrypted and the other was encrypted. The respective file names were as follows: `banner.bmp` and `newbanner.bmp.aes`. We were given a `description.txt` file which said the following.
+So, the challenge was some what reminiscent of the ECB penguin problem in the sense that we had two picture files in .bmp format, one was unencrypted and the other was encrypted. The respective file names were as follows: `banner.bmp` and `newbanner.bmp.aes`. We were given a `description.txt` file which said the following.
 
 > The administrator of a popular cricketing website was recently updating images on their homepage. During the updates, they accidentally uploaded an image we believe may help the England squad continue their domination of the sport. Unfortunately, the image is encrypted. We do still have a copy of the image that was replaced, if it's any help.
 > Original file: banner.bmp
