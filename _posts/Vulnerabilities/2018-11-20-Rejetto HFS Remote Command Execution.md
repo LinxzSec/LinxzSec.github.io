@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rejetto HFS Remote Command Execution CVE2014-6287"
+title:  "Rejetto HFS Remote Command Execution CVE 2014-6287"
 categories: [Vulnerabilities]
 tags: [command execution, exploit, python]
 draft: false
