@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to CGU Series"
-categories: [Cryptography Ground Up]
+categories: [Cryptography-Ground-Up]
 tags: [crypto]
 draft: false
 ---
