@@ -2,8 +2,10 @@
 
 <ul>
   {% for post in site.categories.Cryptography-Ground-Up %}
-    {% unless post.draft %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endunless %}
+    {% for post in category[1] reversed %}
+      {% unless post.draft %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endunless %}
+    {% endfor %}
   {% endfor %}
 </ul>
