@@ -6,6 +6,7 @@ github: https://github.com/LinxzSec
 twitter: https://twitter.com/LinxzSec
 discord: https://discordapp.com/invite/QNwVXXJ
 source: app
+include: ['_pages']
 
 plugins:
   - jekyll-feed
