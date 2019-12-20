@@ -1,3 +1,7 @@
+---
+permalink: /hackthebox
+---
+
 ## HackTheBox
 
 <ul>
