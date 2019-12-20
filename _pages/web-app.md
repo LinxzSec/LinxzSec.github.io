@@ -1,3 +1,7 @@
+---
+permalink: /web-app
+---
+
 ## Web App
 
 <ul>
