@@ -8,7 +8,7 @@ title: Post by Category
     {% for category in categories %}
         <span class="site-tag">
             <li><a href="{{ category | first | slugify }}">
-                    {{ category[0] | replace:'-', ' ' }} ({{ category | last }})
+                    {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
             </a></li>
         </span>
     {% endfor %}
