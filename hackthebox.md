@@ -1,5 +1,5 @@
 {% for post in site.categories.HackTheBox %}
   {% unless post.draft %}
-    <li>{{ post.title }}</li>
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endunless %}
 {% endfor %}
