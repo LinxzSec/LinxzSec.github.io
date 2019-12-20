@@ -1,3 +1,7 @@
+---
+permalink: /cryptography-ground-up
+---
+
 ## Cryptography Ground Up
 
 <ul>
