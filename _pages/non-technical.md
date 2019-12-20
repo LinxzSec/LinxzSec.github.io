@@ -1,3 +1,7 @@
+---
+permalink: /non-technical
+---
+
 ## Non-Technical
 
 <ul>
