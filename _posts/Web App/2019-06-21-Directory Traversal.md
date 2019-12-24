@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Directory Traversal Attacks"
-categories: [Web App]
+categories: [Web-App]
 tags: [vulnerabilities, webapp]
 draft: false
 ---
