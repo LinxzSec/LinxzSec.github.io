@@ -19,3 +19,8 @@
 **Professional Development**
 
 + Learn (more) C
++ Obtain a CVE
+
+## Personal Goals
+
++ Purchase first House
